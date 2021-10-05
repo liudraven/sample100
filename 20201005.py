@@ -2,8 +2,21 @@
 import os
 import sys
 
-print('ERROR, thsoi way')
+class Person(object):
+    def __init__(self):
+        self.__age = 18
 
-if __name__ == '__main__':
-    pass
-    print('INFO, this way')
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self, value):
+        self.__age = value
+
+    def return_init(self):
+        print(self.__age)
+
+p = Person()
+p.age = 200
+print(p.age)
