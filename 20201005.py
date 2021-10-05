@@ -3,6 +3,10 @@ import os
 import sys
 
 class Person(object):
+    '''
+    经典类中只能关联读取方法
+    只有在新式类中才能关联设置方法
+    '''
     def __init__(self):
         self.__age = 18
 
