@@ -4,10 +4,6 @@
 import time
 
 
-def main():
-    time.sleep(3)
-
-
 def log_decorater(fuc):
     """
     aim to build more features for input function
@@ -29,8 +25,12 @@ def log_decorater(fuc):
     return decorator
 
 
+@log_decorater
+def main():
+    time.sleep(3)
+
+
 if __name__ == '__main__':
-    main = log_decorater(main)
     main()
 
 
