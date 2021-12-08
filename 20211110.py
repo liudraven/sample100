@@ -11,6 +11,5 @@ def main(a, *args, **kwargs):
         print(key, value)
 
 
-
 if __name__ == '__main__':
-    main('a', 'a','b', read_flag=1, read_num=2)
+    main('a', 'a', 'b', read_flag=1, read_num=2)
