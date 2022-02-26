@@ -2,13 +2,20 @@
 # auther:drliu
 # date:2022/2/25
 # aim: 装饰器模式
+
+import functools
+
+
 def decorator_fuc2(origin_func):
     '''
     希望对函数进行加工
     :param origin_func:
     :return:
     '''
+
+    @functools.wraps(origin_func)
     def decorator_fuc(*args, **kwargs):
+        print(origin_func.__name__)
         a = origin_func(*args, **kwargs)
         return a
 
@@ -45,6 +52,7 @@ def main():
     #fuc2 = decorator_fuc2(fuc1)
     a = fuc1('hhaa')
     print(a)
+    print(fuc1.__name__)
 
 
 if __name__ == '__main__':

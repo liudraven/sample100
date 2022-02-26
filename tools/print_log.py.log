@@ -1,0 +1,51 @@
+2022-03-01 15:58:39,494 [INFO] decorator.py(63) - this is only one test original function
+2022-03-01 15:58:39,494 [INFO] decorator.py(69) - result is ('success', 'hello world')
+2022-03-01 16:01:57,222 [INFO] decorator.py(64) - this is only one test original function
+2022-03-01 16:01:57,222 [INFO] decorator.py(70) - result is ('success', 'hello world')
+2022-03-01 16:02:16,092 [DEBUG] decorator.py(35) - now executing function is :test_original
+2022-03-01 16:02:16,093 [INFO] decorator.py(64) - this is only one test original function
+2022-03-01 16:02:16,095 [INFO] decorator.py(70) - result is ('success', 'hello world')
+2022-03-01 16:05:25,238 [DEBUG] decorator.py(35) - now executing function is :test_original
+2022-03-01 16:05:43,280 [DEBUG] decorator.py(35) - now executing function is :test_original
+2022-03-01 16:05:43,295 [DEBUG] decorator.py(37) - now executing function type :sample
+2022-03-01 16:05:43,295 [INFO] decorator.py(66) - this is only one test original function
+2022-03-01 16:05:43,295 [INFO] decorator.py(72) - result is ('success', 'hello world')
+2022-03-01 16:12:22,746 [INFO] decorator.py(82) - this is only one test original function
+2022-03-01 16:12:22,746 [DEBUG] decorator.py(54) - function test_original exe_time is 0.0
+2022-03-01 16:12:22,746 [INFO] decorator.py(88) - result is ('success', 'hello world')
+2022-03-01 16:50:14,721 [INFO] decorator.py(95) - this is only one test original function
+2022-03-01 16:50:14,721 [INFO] decorator.py(101) - result is None
+2022-03-01 17:16:48,329 [INFO] decorator.py(84) - this is only one test original function
+2022-03-01 17:16:48,329 [DEBUG] decorator.py(54) - function test_original exe_time is 0.0(s)
+2022-03-01 17:16:48,329 [INFO] decorator.py(90) - result is ('success', 'hello world')
+2022-03-01 17:21:20,064 [INFO] decorator.py(75) - this is only one test original function
+2022-03-01 17:21:20,064 [INFO] decorator.py(81) - result is None
+2022-03-01 17:21:37,341 [INFO] decorator.py(75) - this is only one test original function
+2022-03-01 17:21:37,341 [INFO] decorator.py(68) - 有函数入参，无装饰器入参，无包装
+2022-03-01 17:21:37,341 [INFO] decorator.py(81) - result is None
+2022-03-01 17:24:25,577 [INFO] decorator.py(87) - this is only one test original function
+2022-03-01 17:25:59,473 [INFO] decorator.py(78) - 有装饰器入参，没有函数入参，无包装
+2022-03-01 17:25:59,473 [INFO] decorator.py(88) - this is only one test original function
+2022-03-01 20:04:42,249 [INFO] decorator.py(99) - this is only one test original function
+2022-03-01 20:04:42,249 [INFO] decorator.py(105) - result is ('success', 'hello world')
+2022-03-01 20:13:05,796 [INFO] decorator.py(100) - wow
+2022-03-01 20:13:05,796 [INFO] decorator.py(101) - this is only one test original function
+2022-03-01 20:13:05,796 [INFO] decorator.py(107) - result is ('success', 'hello world')
+2022-03-01 20:19:39,028 [INFO] decorator.py(107) - wow
+2022-03-01 20:19:39,028 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:19:39,028 [INFO] decorator.py(114) - result is ('success', 'hello world')
+2022-03-01 20:19:45,864 [INFO] decorator.py(107) - wow
+2022-03-01 20:19:45,879 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:19:45,879 [INFO] decorator.py(114) - result is ('success', 'hello world')
+2022-03-01 20:19:52,960 [INFO] decorator.py(107) - wow
+2022-03-01 20:19:52,960 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:19:52,960 [INFO] decorator.py(114) - result is ('success', 'hello world')
+2022-03-01 20:19:59,948 [INFO] decorator.py(107) - wow
+2022-03-01 20:19:59,948 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:19:59,948 [INFO] decorator.py(114) - result is ('success', 'hello world')
+2022-03-01 20:28:52,705 [INFO] decorator.py(107) - wow
+2022-03-01 20:28:52,705 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:28:52,705 [INFO] decorator.py(114) - result is ('success', 'hello world')
+2022-03-01 20:29:19,172 [INFO] decorator.py(107) - wow
+2022-03-01 20:29:19,172 [INFO] decorator.py(108) - this is only one test original function
+2022-03-01 20:29:19,172 [INFO] decorator.py(114) - result is ('success', 'hello world')

@@ -1,0 +1,27 @@
+2022-02-26 17:44:12,023 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:44:12,023 [DEBUG] decorator.py(22) - test
+2022-02-26 17:44:12,023 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:45:00,601 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:45:00,601 [DEBUG] decorator.py(22) - test
+2022-02-26 17:45:00,601 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:45:32,212 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:45:32,212 [DEBUG] decorator.py(22) - test
+2022-02-26 17:45:32,212 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:45:45,483 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:45:45,483 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:50:37,687 [INFO] decorator.py(17) - test_original
+2022-02-26 17:50:37,687 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:50:37,687 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:51:44,761 [INFO] decorator.py(17) - test_original
+2022-02-26 17:51:44,761 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:51:44,761 [INFO] decorator.py(22) - function:test_original exe time is 0.0
+2022-02-26 17:51:44,761 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:51:58,723 [INFO] decorator.py(17) - test_original
+2022-02-26 17:51:58,723 [INFO] decorator.py(31) - this is only one test original function
+2022-02-26 17:51:58,723 [INFO] decorator.py(22) - function:test_original exe time is 0.0(s)
+2022-02-26 17:51:58,723 [INFO] decorator.py(37) - result is ('success', 'hello world')
+2022-02-26 17:53:02,194 [INFO] decorator.py(18) - function:test_original start 
+2022-02-26 17:53:02,194 [INFO] decorator.py(33) - this is only one test original function
+2022-02-26 17:53:02,194 [INFO] decorator.py(23) - function:test_original end 
+2022-02-26 17:53:02,194 [INFO] decorator.py(24) - function:test_original exe time is 0.0(s)
+2022-02-26 17:53:02,194 [INFO] decorator.py(39) - result is ('success', 'hello world')
