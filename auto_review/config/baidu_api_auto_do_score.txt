@@ -1,0 +1,10 @@
+[general]
+app_name=auto_do_score
+app_id=25779180
+api_key=vKtWmG1XSPOBGSexlGAshGEA
+secret_key=9eemncR5nmkYOtkr5vpr2x2fGHLZP2r9
+
+[token]
+token=24.6b753ec6815798fce8ffb162864ccdb1.2592000.1650036575.282335-25779180
+token_apply_start_time=
+token_apply_end_time

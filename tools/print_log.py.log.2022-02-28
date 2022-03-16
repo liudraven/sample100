@@ -1,5 +1,0 @@
-2022-02-28 14:44:28,439 [INFO] decorator.py(18) - function:test_original start 
-2022-02-28 14:44:28,439 [INFO] decorator.py(33) - this is only one test original function
-2022-02-28 14:44:28,439 [INFO] decorator.py(23) - function:test_original end 
-2022-02-28 14:44:28,439 [INFO] decorator.py(24) - function:test_original exe time is 0.0(s)
-2022-02-28 14:44:28,439 [INFO] decorator.py(39) - result is ('success', 'hello world')
