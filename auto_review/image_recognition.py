@@ -31,7 +31,7 @@ from tools.print_log import print_log
 # -----------------------------------------------------------------------------------------------------------
 # 定义公共参数
 # -----------------------------------------------------------------------------------------------------------
-IMAGE_RECOGNITION_API_URL = 'https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic'
+IMAGE_RECOGNITION_API_URL = 'https://aip.baidubce.com/rest/2.0/ocr/v1/webimage'
 
 
 # -----------------------------------------------------------------------------------------------------------
@@ -52,12 +52,31 @@ def test_api():
 def get_test_image():
     """测试是否可以获取 符合百度接口的图片"""
     image_folder = os.path.realpath(cur_path + '/images_source')
-    test_image = os.path.realpath(image_folder + '/汤小鱼_历史_20220305.png')
-    f = open(test_image, 'rb')
-    img_data = base64.b64encode(f.read())
-    image_dict = {'汤小鱼_历史_20220305.png': img_data}
+    _image_list = os.walk(image_folder)
 
-    return image_dict
+    # 文件
+    print_log('INFO', '_image_list : {0}'.format(_image_list))
+    _image_name_list = []
+    for root, dirs, files in _image_list:
+        _image_name_list = files
+    print_log('INFO', '_image_name_list : {0}'.format(_image_name_list))
+
+    # 文件绝对路径
+    _image_file_path_list = []
+    for _file in _image_name_list:
+        _image_file_path_list.append([os.path.realpath(image_folder + '/' + _file), _file])
+    print_log('INFO', '_image_file_path_list : {0}'.format(_image_file_path_list))
+
+    # 文件数据
+    _image_dict = {}
+    for _image_path in _image_file_path_list:
+        print_log('INFO', '_image_path[0] : {0}'.format(_image_path[0]))
+        print_log('INFO', '_image_path[1] : {0}'.format(_image_path[1]))
+        with open(_image_path[0], 'r+b') as f:
+            img_data = base64.b64encode(f.read())
+            _image_dict[_image_path[1]] = img_data
+
+    return _image_dict
 
 
 def get_token():
@@ -82,29 +101,36 @@ def get_token():
 def test_baidu_shibie_api(image_dict):
     """测试是否可以调用百度接口--通用文字识别（标准版）"""
     """页面链接 https://ai.baidu.com/ai-doc/OCR/zk3h7xz52"""
-    access_token = '24.6b753ec6815798fce8ffb162864ccdb1.2592000.1650036575.282335-25779180'
+    token = '24.705d2072ee1bbc201f1418863efdc918.2592000.1655562676.282335-26275249'
+    access_token = token
     _IMAGE_RECOGNITION_API_URL = IMAGE_RECOGNITION_API_URL + "?access_token=" + access_token
 
     headers = {'content-type': 'application/x-www-form-urlencoded'}
 
     params = {}
+    _result = {}
     for key, value in image_dict.items():
         params = {"image": value}
+        _response = requests.post(_IMAGE_RECOGNITION_API_URL, data=params, headers=headers)
+        _response_data = json.loads(_response.text)
+        print_log('INFO', 'get response from URl:{0}'.format(_IMAGE_RECOGNITION_API_URL))
+        print_log('INFO', 'response : {0}'.format(_response_data))
+        _result[key] = _response_data
 
-    _response = requests.post(_IMAGE_RECOGNITION_API_URL, data=params, headers=headers)
-    _response_data = json.loads(_response.text)
-    print_log('INFO', 'get response from URl:{0}'.format(_IMAGE_RECOGNITION_API_URL))
-    print_log('INFO', 'response : {0}'.format(_response_data))
+    with open('result.txt', 'a') as f:
+        for key, item in _result.items():
+            f.writelines(item + '\n\r')
 
 
 # -----------------------------------------------------------------------------------------------------------
 # 主函数
 # -----------------------------------------------------------------------------------------------------------
 def main():
-    #get_token()
     image_dict = get_test_image()
     test_baidu_shibie_api(image_dict)
 
 
 if __name__ == '__main__':
     main()
+
+
