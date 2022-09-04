@@ -1,12 +1,10 @@
 # -*- coding:UTF-8 -*-
 # auther:drliu
-# date:2022/8/21
-# aim: log nb-log 测试
-import nb_log
+# date:2022/8/30
+# aim: 
 
 def main():
-    print('hha')
-    print('bb')
+    pass
 
 
 if __name__ == '__main__':
