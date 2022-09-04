@@ -59,7 +59,7 @@ class Py_Logger(object):
             self.ch.setFormatter(formatter)
 
             # 添加handler
-            self.logger.addHandler(self.fh)
+            # self.logger.addHandler(self.fh)
             console_flag = self.get_console_flag()
             if console_flag:
                 self.logger.addHandler(self.ch)
