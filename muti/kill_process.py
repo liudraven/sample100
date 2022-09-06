@@ -73,9 +73,11 @@ def kill_proc_tree(pid, sig=signal.SIGTERM, include_parent=True,
 
 
 def main():
-    _child_pid_list = start_children()
-    for _pid in _child_pid_list:
-        kill_proc_tree(_pid)
+    #_child_pid_list = start_children()
+    _pid = os.getpid()
+    kill_proc_tree(_pid)
+    # for _pid in _child_pid_list:
+    #     kill_proc_tree(_pid)
 
 
 if __name__ == '__main__':
